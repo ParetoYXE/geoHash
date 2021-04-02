@@ -2,8 +2,7 @@
 
 ## Proposal for Development
   
-  The purpose of GeoHash will be to develop a decentralized Peer to Peer networking operating over TCP Sockets that is tied to a physical internet of things where      "server" nodes running linux on a RaspberryPI will operate as the base infrastructure for the P2P Network but will operate independently and be tied to a unique geolocational hash. The purpose of providing each server node with a unique geolocaitonal hash is to intimatly tie it to the locaiton it was originally generated at on the earth and make sure it is the only one providing routing and seed information for that "region". Regions can be thought as localized rooms who are controlled by the owner of the original server node who posseses limited control over how the room operates, this room is only accessible to individuals falling within the geolocational cooridantes used to generate it creating a form of digital real estate. How users and clients interact with the node is up to the owner. A chat room some form of MMO using the seed as world generator?
-For the scope of this project I will be limiting it to several basic features but hypothetically the API/Seed can be expanded for numerous uses. 
+  The purpose of GeoHash will be to develop a decentralized Peer to Peer networking operating over TCP Sockets that is tied to a physical internet of things where      "server" nodes running linux on a RaspberryPI will operate as the base infrastructure for the P2P Network but will operate independently and be tied to a unique geolocational hash. The purpose of providing each server node with a unique geolocaitonal hash is to intimatly tie it to the locaiton it was originally generated at on the earth and make sure it is the only one providing routing and seed information for that "region". Regions can be thought as localized rooms who are controlled by the owner of the original server node who posseses limited control over how the room operates, this room is only accessible to individuals falling within the geolocational cooridantes used to generate it creating a form of digital real estate. How users and clients interact with the node is up to the owner. A chat room some form of MMO using the seed as world generator? For the scope of this project I will be limiting it to several basic features but hypothetically the API/Seed can be expanded for numerous uses. 
   
   
 ## Use and Operation
@@ -16,5 +15,15 @@ For the scope of this project I will be limiting it to several basic features bu
  
 ## The Seed 
 
-  The Seed is essentially what gives each sever node a concept of "value" or "weight" within the network. Each Seed is an encrypted log that is locked both by the original owner of the nodes secret key and the unique GPS coordinates used to initially generate it. This seed will grow in complexity as users interact with the node in the manner specified by the owner. 
-  For this initial development the owner will assumed to running an encrypted chat log where the clients remain anonymous and all logs are preserved privetly unless made public by the node owner.
+  The Seed is essentially what gives each sever node a concept of "value" or "weight" within the network. Each Seed is an encrypted log that is locked both by the original owner of the nodes secret key and the unique GPS coordinates used to initially generate it. This seed will grow in complexity as users interact with the node in the manner specified by the owner.For this initial development the owner will assumed to running an encrypted chat log where the clients remain anonymous and all logs are preserved privetly unless made public by the node owner.
+  
+  
+  
+  
+## THE API 
+  The initial API will be simple but will be scalable for multiple features utilizing the seed and network. Initially the only client side interaction allowed on "open nodes" those fully accessible to the public for client side interactions will be for the use of a chat room. These APIS will allow  the following client side functions, 
+    -Load_Logs()
+    -Write_to_Logs()
+    -Connect_to_Node
+    -Disconnect_from_Node
+    
