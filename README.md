@@ -8,6 +8,7 @@
 ## Use and Operation
 
   Each server node will communicate on a Peer to Peer network operating over TCP Sockets implemented in Python. Each Server node will broadcast to all other nodes within the network when
+  
                 1) It has been created and who controls it (Encrypted Key for ID)
                 2) When its Seed has been updated due to user/client engagement
 
