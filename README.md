@@ -22,6 +22,7 @@
   
 ## THE API 
   The initial API will be simple but will be scalable for multiple features utilizing the seed and network. Initially the only client side interaction allowed on "open nodes" those fully accessible to the public for client side interactions will be for the use of a chat room. These APIS will allow  the following client side functions, 
+    
     -Load_Logs()
     
     -Write_to_Logs()
