@@ -29,7 +29,7 @@ class Peer2PeerNode (Node):
 
     def node_message(self, node, data):
         if(self.id == data["id"]):
-            print("Update from Seed Node:" + str(data))
+            #print("Update from Seed Node:" + str(data))
             self.dataLog = data["message"]
 
 

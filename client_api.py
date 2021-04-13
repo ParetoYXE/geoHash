@@ -71,16 +71,21 @@ def Display_Data():
 
 
 
-Connect_to_Node(IP_addres)
-
-Write_to_Logs({"message":"write","data":"hello"})
 
 
-while(run):
-	Load_Logs()
-	time.sleep(10)
-	Display_Data()
-Disconnect_from_Node()
+
+def Init():
+	Connect_to_Node(IP_addres)
+	Write_to_Logs({"message":"write","data":"hello"})
+
+
+
+
+#while(run):
+	#Load_Logs()
+	#time.sleep(10)
+	#Display_Data()
+#Disconnect_from_Node()
 
 
 
