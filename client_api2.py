@@ -26,7 +26,7 @@ h_name = socket.gethostname()
 IP_addres = socket.gethostbyname(h_name)
 
 #create client node
-client_node = Peer2PeerNode(IP_addres, 8001)
+client_node = Peer2PeerNode(IP_addres, 8002)
 
 
 g = geocoder.ip('me')
@@ -72,7 +72,7 @@ Write_to_Logs({"message":"write","data":"hello"})
 
 
 while(run):
-	Load_Logs()
+	#Load_Logs()
 	time.sleep(10)
 
 Disconnect_from_Node()

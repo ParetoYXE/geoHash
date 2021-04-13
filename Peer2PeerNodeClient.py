@@ -5,6 +5,7 @@ class Peer2PeerNode (Node):
 
 
   
+    dataLog = []
 
     # Python class constructor
     def __init__(self, host, port):
@@ -27,9 +28,9 @@ class Peer2PeerNode (Node):
         print("outbound_node_disconnected: " + node.id)
 
     def node_message(self, node, data):
-    
-        print("node_message from " + node.id + ": " + str(data))
-
+        if(self.id == data["id"]):
+            print("Update from Seed Node" + node.id + ": " + str(data))
+            self.dataLog.append(data)
 
 
     def node_disconnect_with_outbound_node(self, node):
