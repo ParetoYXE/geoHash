@@ -4,11 +4,7 @@ from p2pnetwork.node import Node
 class Peer2PeerNode (Node):
 
 
-    connectedNodes = []
-    seedHash = ""
-    dataCube = []
-    weight = 0
-    broadcast = False
+  
 
     # Python class constructor
     def __init__(self, host, port):
