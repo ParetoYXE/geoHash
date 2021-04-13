@@ -9,6 +9,7 @@ class Peer2PeerNode (Node):
     dataCube = []
     weight = 0
     broadcast = False
+    broadcastId = ""
 
     # Python class constructor
     def __init__(self, host, port):
@@ -50,6 +51,7 @@ class Peer2PeerNode (Node):
         elif(data["message"] == "read"):
             if(node.id in self.connectedNodes):
                 self.broadcast = True
+                self.broadcastId = node.id
                 print("Node read successful")
             else:
                 print("Node not approved to read")

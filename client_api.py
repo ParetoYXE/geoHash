@@ -65,6 +65,11 @@ def Load_Logs():
 	client_node.send_to_nodes({"message":"read"})
 
 
+def Display_Data():
+	for i in client_node.dataLog:
+		print(i)
+
+
 
 Connect_to_Node(IP_addres)
 
@@ -74,5 +79,9 @@ Write_to_Logs({"message":"write","data":"hello"})
 while(run):
 	Load_Logs()
 	time.sleep(10)
-
+	Display_Data()
 Disconnect_from_Node()
+
+
+
+

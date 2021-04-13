@@ -29,8 +29,8 @@ class Peer2PeerNode (Node):
 
     def node_message(self, node, data):
         if(self.id == data["id"]):
-            print("Update from Seed Node" + node.id + ": " + str(data))
-            self.dataLog.append(data)
+            print("Update from Seed Node:" + str(data))
+            self.dataLog = data["message"]
 
 
     def node_disconnect_with_outbound_node(self, node):

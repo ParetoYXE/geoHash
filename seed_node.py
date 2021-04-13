@@ -16,7 +16,7 @@ import geocoder
 
 
 def broadcastupdate():
-	seed_node.send_to_nodes("Test")
+	seed_node.send_to_nodes({"id":seed_node.broadcastId,"message":seed_node.dataCube})
 
 
 def confirmOriginalSeed():
@@ -25,7 +25,6 @@ def confirmOriginalSeed():
 
 #List of preserved logs. Encrypted for public access.
 seedHash = ""
-data = []
 
 sys.path.insert(0, '..') # Import the files where the modules are located
 
@@ -67,6 +66,7 @@ while(run):
 	if(seed_node.broadcast):
 		broadcastupdate()
 		seed_node.broadcast = False
+
 	
 
 
