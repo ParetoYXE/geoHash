@@ -66,6 +66,7 @@ while(run):
 	print(seed_node.broadcast)
 	if(seed_node.broadcast):
 		broadcastupdate()
+		seed_node.broadcast = False
 	
 
 
